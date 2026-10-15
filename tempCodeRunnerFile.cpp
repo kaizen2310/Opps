@@ -1,3 +1,1 @@
-    // getName() const {
-    //     return this-> name;
-    // }
+    // cout<<A.name<<endl;
