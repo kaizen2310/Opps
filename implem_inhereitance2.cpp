@@ -24,6 +24,9 @@ public:
         cout<<"engine is stopped"<< name << " " << model << endl;
     }
 
+    ~Vehicle(){
+        cout<<"i am inside vehicle dtor"<< endl;
+    }
 };
 
 class Car : public Vehicle{
@@ -41,6 +44,9 @@ class Car : public Vehicle{
         cout<<"Ac has started of "<< name << " " << model << endl;
     }
 
+    ~Car(){
+        cout<<"i am inside car dtor"<< endl;
+    }
 };
 
 class MoterCycle : public Vehicle{
@@ -49,7 +55,7 @@ class MoterCycle : public Vehicle{
     string transmissionType;
 
     MoterCycle(string _name, string _model, int _noOfTyers, int _noOfDoors, string _transmissionType) : Vehicle(_name, _model, _noOfTyers){
-        cout<<"inside car ctor"<<endl;
+        cout<<"inside MoterCycle ctor"<<endl;
         this->noOfDoors = _noOfDoors;
         this->transmissionType = _transmissionType;
     }
@@ -58,6 +64,9 @@ class MoterCycle : public Vehicle{
         cout<<"wheelie kar rahi hai "<< name << " " << model << endl;
     }
 
+    ~MoterCycle(){
+        cout<<"i am inside MoterCycle dtor"<< endl;
+    }
 };
 
 
@@ -75,6 +84,12 @@ int main(){
     return 0;
 }
 
+
+
+/*
+    derived class constructor will call the base class constructor first and then it will call the derived class constructor
+    derived class destructor will call the derived class destructor first and then it will call the base class destructor
+*/
 
 //  when we create a object of child class it forst calles the parent class's constructor and intializes the data members
 // and then it intializes the child class's data members
