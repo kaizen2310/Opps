@@ -3,6 +3,15 @@ using namespace std;
 
 // test this code with virtual keyweord in draw method of shape class to make it polymorphic
 // and without virtual keyword to see the difference in output
+
+
+/*
+    * Virtual functions:
+    - A virtual function is a member function in the base class that you expect to override in derived classes.
+    - When you use a base class pointer to call a virtual function, C++ determines which function to call based on the actual object type at runtime.
+    - This mechanism is known as dynamic dispatch or late binding.
+    - If a function is not declared as virtual, the function call is resolved at compile time (static binding), and the base class version of the function will be called, even if the object is of a derived class.
+*/  
 class Shape{
     public:
 
