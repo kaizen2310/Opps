@@ -31,7 +31,7 @@ int main()
     
     
     
-    Bird * b2 = new Bird();
+    // Bird * b2 = new Bird();
     // V.IMP interview question: we cannot create an object of an abstract class, so the above line will give a compile time error,
     // because Bird is an abstract class and cannot be instantiated.
 
