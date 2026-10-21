@@ -1,1 +1,0 @@
-    // cout<<A.name<<endl;
