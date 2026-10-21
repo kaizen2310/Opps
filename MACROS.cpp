@@ -17,6 +17,7 @@ void printMax(int a, int b){
 
 int main(){
     cout << circleArea(65.8) << endl;
+    cout << circleperimeter(65.8) << endl;
     printMax(5, 10);
     return 0;
 }
